@@ -71,12 +71,17 @@ export default {
       console.log(this.scrolled);
     },
     downloadCV() {
-      let a = document.createElement("a");
-      const blob = new Blob(["pdf"], "@assets/MatanLevi_CV.pdf");
-      a.href = window.URL.createObjectURL(blob);
-      a.download = "myOrder.pdf";
+      const file = require("@/assets/MatanLevi_CV.pdf");
 
-      a.click();
+      const linkSource = file.default;
+      const downloadLink = document.createElement("a");
+      const fileName = "MatanLevi_CV.pdf";
+      downloadLink.href = linkSource;
+      downloadLink.download = fileName;
+      downloadLink.click();
+
+      document.body.removeChild(downloadLink);
+      console.log(file.default);
     },
   },
   mounted() {
