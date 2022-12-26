@@ -81,7 +81,6 @@ export default {
       downloadLink.click();
 
       document.body.removeChild(downloadLink);
-      console.log(file.default);
     },
   },
   mounted() {
