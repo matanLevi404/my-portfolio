@@ -1,6 +1,7 @@
 <template>
   <section id="about" class="about-section">
     <div class="container">
+      <h3 class="title">About.</h3>
       <div class="about-area">
         <div class="col-left">
           <h2>
@@ -95,15 +96,12 @@ video {
   width: 75%;
 }
 
-@media (max-width: 994px) {
+@media (max-width: 992px) {
   .about-area {
     flex-direction: column;
     text-align: center;
   }
 
-  .col-left {
-    padding: 20px;
-  }
   .col-left h2 {
     font-size: 22px;
   }
@@ -111,6 +109,20 @@ video {
   .col-left,
   .col-right {
     width: 100%;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-left {
+    text-align: left;
+  }
+  .col-left h2 {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 </style>

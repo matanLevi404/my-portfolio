@@ -197,4 +197,16 @@ h3.scrolled {
     line-height: 32px;
   }
 }
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 25px;
+    line-height: 45px;
+  }
+
+  .sub-heading {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
 </style>
