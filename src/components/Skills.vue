@@ -52,6 +52,36 @@ export default {
           heading: "MySQL",
           text: "",
         },
+        {
+          img: "redis-logo.png",
+          heading: "Redis",
+          text: "",
+        },
+        {
+          img: "docker-logo.png",
+          heading: "Docker",
+          text: "",
+        },
+        {
+          img: "postgresql-logo.png",
+          heading: "PostgreSQL",
+          text: "",
+        },
+        {
+          img: "springboot-logo.png",
+          heading: "SpringBoot",
+          text: "",
+        },
+        {
+          img: "cassandra-logo.png",
+          heading: "Cassandra",
+          text: "",
+        },
+        {
+          img: "kubernetes-logo.png",
+          heading: "Kubernetes",
+          text: "",
+        },
       ],
     };
   },
